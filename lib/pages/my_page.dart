@@ -10,6 +10,7 @@ class MyPage extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
               children: [
@@ -60,6 +61,27 @@ class MyPage extends StatelessWidget {
 
               ],
             ),
+            const SizedBox(height: 8),
+            Text(
+              'Instagram',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+              ),
+            ),
+            Text(
+              '#YoursToMake',
+              style: TextStyle(
+                color: Colors.blue,
+              ),
+            ),
+            Text(
+              'https://instagram.com',
+              style: TextStyle(
+                color: Colors.blue,
+              ),
+            ),
+
           ],
         ),
       ),
