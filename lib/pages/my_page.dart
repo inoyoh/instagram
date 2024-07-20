@@ -81,6 +81,23 @@ class MyPage extends StatelessWidget {
                 color: Colors.blue,
               ),
             ),
+            Row(
+              children: [
+                OutlinedButton(
+                  onPressed: () {},
+                  child: Text('フォロー中'),
+                ),
+                OutlinedButton(
+                  onPressed: () {},
+                  child: Text('メッセージ'),
+                ),
+                OutlinedButton(
+                  onPressed: () {},
+                  child: Icon(Icons.keyboard_arrow_down),
+                ),
+
+              ],
+            ),
 
           ],
         ),
