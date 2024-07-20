@@ -53,11 +53,11 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.chat), label: 'Chat'),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'フィード'),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'マイページ'),
         ],
         currentIndex: _currentIndex,
-        fixedColor: Colors.blueAccent,
+        //fixedColor: Colors.blueAccent,
         onTap: _onItemTapped,
         type: BottomNavigationBarType.fixed,
       ),
