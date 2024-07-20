@@ -37,8 +37,8 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _currentIndex = 0;
   final _pageWidgets = [
-    FeedPage(),
-    MyPage(),
+    const FeedPage(),
+    const MyPage(),
   ];
 
   @override
@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: _pageWidgets.elementAt(_currentIndex),
       bottomNavigationBar: BottomNavigationBar(
-        items: <BottomNavigationBarItem>[
+        items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'フィード'),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: 'マイページ'),
         ],
