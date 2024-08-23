@@ -81,19 +81,65 @@ class MyPage extends StatelessWidget {
                 color: Colors.blue,
               ),
             ),
+            const SizedBox(height: 8),
             Row(
               children: [
-                OutlinedButton(
-                  onPressed: () {},
-                  child: Text('フォロー中'),
+                Expanded(
+                  child: Row(
+                    children:[
+                      Expanded(
+                        child: OutlinedButton(
+                          onPressed: () {},
+                          child: Text('フォロー中',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12,
+                            ),
+                          ),
+                          style: OutlinedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: 4),
+                      Expanded(
+                        child: OutlinedButton(
+                          onPressed: () {},
+                          child: Text(
+                            'メッセージ',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12,
+                            ),
+                          ),
+                          style: OutlinedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
+
+                const SizedBox(width: 4),
                 OutlinedButton(
                   onPressed: () {},
-                  child: Text('メッセージ'),
-                ),
-                OutlinedButton(
-                  onPressed: () {},
-                  child: Icon(Icons.keyboard_arrow_down),
+                  child: Icon(
+                    Icons.keyboard_arrow_down,
+                    color: Colors.black,
+                  ),
+                  style: OutlinedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                  ),
+
                 ),
 
               ],
