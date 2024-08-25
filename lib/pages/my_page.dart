@@ -151,10 +151,7 @@ class MyPage extends StatelessWidget {
                 physics: const NeverScrollableScrollPhysics(),
 
                 primary: false,
-                padding: const EdgeInsets.all(20),
-                crossAxisSpacing: 10,
-                mainAxisSpacing: 10,
-                crossAxisCount: 2,
+                crossAxisCount: 3,
                 children: <Widget>[
                   Container(
                     padding: const EdgeInsets.all(8),
