@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
 
 class MyPage extends StatelessWidget {
-  const MyPage({super.key});
+  MyPage({super.key});
+
+  final images = [
+    'https://images.unsplash.com/photo-1724226224544-b244b08e505e?q=80&w=2971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    'https://images.unsplash.com/photo-1723924671047-788dca3e7f58?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8',
+    'https://images.unsplash.com/photo-1724221145933-e12d689a3708?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D',
+    'https://plus.unsplash.com/premium_photo-1692833836807-7c2ec90aec19?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMnx8fGVufDB8fHx8fA%3D%3D',
+    'https://images.unsplash.com/photo-1723718283396-01bc394cdf5d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D',
+    'https://images.unsplash.com/photo-1724427167952-4db4eaceae90?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyOHx8fGVufDB8fHx8fA%3D%3D',
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -163,34 +172,10 @@ class MyPage extends StatelessWidget {
 
               primary: false,
               crossAxisCount: 3,
-              children: <Widget>[
-                InstagramPostItem(
-                  imageUrl :
-                    'https://images.unsplash.com/photo-1724226224544-b244b08e505e?q=80&w=2971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-                ),
-                InstagramPostItem(
-                  imageUrl :
-                  'https://images.unsplash.com/photo-1723924671047-788dca3e7f58?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8',
-                ),
-                InstagramPostItem(
-                  imageUrl :
-                  'https://images.unsplash.com/photo-1724221145933-e12d689a3708?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D',
-                ),
-                InstagramPostItem(
-                  imageUrl :
-                  'https://plus.unsplash.com/premium_photo-1692833836807-7c2ec90aec19?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMnx8fGVufDB8fHx8fA%3D%3D',
-                ),
-                InstagramPostItem(
-                  imageUrl :
-                  'https://images.unsplash.com/photo-1723718283396-01bc394cdf5d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D',
-                ),
-                InstagramPostItem(
-                  imageUrl :
-                  'https://images.unsplash.com/photo-1724427167952-4db4eaceae90?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyOHx8fGVufDB8fHx8fA%3D%3D',
-                ),
-
-              ],
-            )
+              children: images.map((imageUrl) {
+                return InstagramPostItem(imageUrl: imageUrl)
+              }).toList(),
+            ),
           ],
         ),
       ),
