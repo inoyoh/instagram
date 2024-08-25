@@ -7,7 +7,6 @@ class MyPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('マイページ')),
-      body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -25,6 +24,8 @@ class MyPage extends StatelessWidget {
                     Text(
                       '7,041',
                       style: TextStyle(
+      body: SingleChildScrollView(
+        child: Padding(
                           fontWeight: FontWeight.bold,
                           fontSize: 16,
                       ),
