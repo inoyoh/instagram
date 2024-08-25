@@ -164,25 +164,12 @@ class MyPage extends StatelessWidget {
               primary: false,
               crossAxisCount: 3,
               children: <Widget>[
-                Image.network(
-                  'https://static.vecteezy.com/system/resources/previews/018/930/691/non_2x/instagram-logo-instagram-icon-transparent-free-png.png',
-                ),
-                Image.network(
-                  'https://static.vecteezy.com/system/resources/previews/018/930/691/non_2x/instagram-logo-instagram-icon-transparent-free-png.png',
-                ),
-                Image.network(
-                  'https://static.vecteezy.com/system/resources/previews/018/930/691/non_2x/instagram-logo-instagram-icon-transparent-free-png.png',
-                ),
-                Image.network(
-                  'https://static.vecteezy.com/system/resources/previews/018/930/691/non_2x/instagram-logo-instagram-icon-transparent-free-png.png',
-                ),
-                Image.network(
-                  'https://static.vecteezy.com/system/resources/previews/018/930/691/non_2x/instagram-logo-instagram-icon-transparent-free-png.png',
-                ),
-                Image.network(
-                  'https://static.vecteezy.com/system/resources/previews/018/930/691/non_2x/instagram-logo-instagram-icon-transparent-free-png.png',
-                ),
-
+                InstagramPostItem(),
+                InstagramPostItem(),
+                InstagramPostItem(),
+                InstagramPostItem(),
+                InstagramPostItem(),
+                InstagramPostItem(),
               ],
             )
           ],
@@ -197,7 +184,9 @@ class InstagramPostItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Image.network(
+      'https://static.vecteezy.com/system/resources/previews/018/930/691/non_2x/instagram-logo-instagram-icon-transparent-free-png.png',
+    );
   }
 }
 
