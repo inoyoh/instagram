@@ -164,7 +164,10 @@ class MyPage extends StatelessWidget {
               primary: false,
               crossAxisCount: 3,
               children: <Widget>[
-                InstagramPostItem(),
+                InstagramPostItem(
+                  imageUrl :
+                    'https://static.vecteezy.com/system/resources/previews/018/930/691/non_2x/instagram-logo-instagram-icon-transparent-free-png.png',
+                ),
                 InstagramPostItem(),
                 InstagramPostItem(),
                 InstagramPostItem(),
@@ -180,12 +183,14 @@ class MyPage extends StatelessWidget {
 }
 
 class InstagramPostItem extends StatelessWidget {
-  const InstagramPostItem({super.key});
+  const InstagramPostItem({super.key, required this.imageUrl});
+
+  final String imageUrl;
 
   @override
   Widget build(BuildContext context) {
     return Image.network(
-      'https://static.vecteezy.com/system/resources/previews/018/930/691/non_2x/instagram-logo-instagram-icon-transparent-free-png.png',
+      imageUrl;
     );
   }
 }
