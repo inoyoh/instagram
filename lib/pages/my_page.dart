@@ -142,6 +142,9 @@ class MyPage extends StatelessWidget {
                   ),
 
                 ),
+                // 以下2行で要素分の高さを決定して動く
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
 
               ],
             ),
