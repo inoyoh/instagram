@@ -191,3 +191,13 @@ class MyPage extends StatelessWidget {
     );
   }
 }
+
+class InstagramPostItem extends StatelessWidget {
+  const InstagramPostItem({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
+  }
+}
+
