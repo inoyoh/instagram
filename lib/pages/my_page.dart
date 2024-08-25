@@ -164,36 +164,25 @@ class MyPage extends StatelessWidget {
               primary: false,
               crossAxisCount: 3,
               children: <Widget>[
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  color: Colors.teal[100],
-                  child: const Text("He'd have you all unravel at the"),
+                Image.network(
+                  'https://static.vecteezy.com/system/resources/previews/018/930/691/non_2x/instagram-logo-instagram-icon-transparent-free-png.png',
                 ),
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  color: Colors.teal[200],
-                  child: const Text('Heed not the rabble'),
+                Image.network(
+                  'https://static.vecteezy.com/system/resources/previews/018/930/691/non_2x/instagram-logo-instagram-icon-transparent-free-png.png',
                 ),
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  color: Colors.teal[300],
-                  child: const Text('Sound of screams but the'),
+                Image.network(
+                  'https://static.vecteezy.com/system/resources/previews/018/930/691/non_2x/instagram-logo-instagram-icon-transparent-free-png.png',
                 ),
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  color: Colors.teal[400],
-                  child: const Text('Who scream'),
+                Image.network(
+                  'https://static.vecteezy.com/system/resources/previews/018/930/691/non_2x/instagram-logo-instagram-icon-transparent-free-png.png',
                 ),
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  color: Colors.teal[500],
-                  child: const Text('Revolution is coming...'),
+                Image.network(
+                  'https://static.vecteezy.com/system/resources/previews/018/930/691/non_2x/instagram-logo-instagram-icon-transparent-free-png.png',
                 ),
-                Container(
-                  padding: const EdgeInsets.all(8),
-                  color: Colors.teal[600],
-                  child: const Text('Revolution, they...'),
+                Image.network(
+                  'https://static.vecteezy.com/system/resources/previews/018/930/691/non_2x/instagram-logo-instagram-icon-transparent-free-png.png',
                 ),
+
               ],
             )
           ],
