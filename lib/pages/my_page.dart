@@ -173,7 +173,7 @@ class MyPage extends StatelessWidget {
               primary: false,
               crossAxisCount: 3,
               children: images.map((imageUrl) {
-                return InstagramPostItem(imageUrl: imageUrl)
+                return InstagramPostItem(imageUrl: imageUrl);
               }).toList(),
             ),
           ],
@@ -196,4 +196,7 @@ class InstagramPostItem extends StatelessWidget {
     );
   }
 }
+
+
+
 
